@@ -28,7 +28,7 @@ body {
     color: white;
   }
   .content{
-    padding-left:16px;
+    padding-left:22px;
     padding-top: 16px;
   }
   #logo{
@@ -51,4 +51,18 @@ body {
     font-size:10px;
     color:#737373
  }
+ @keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.welcome{
+  padding:10px 80px 10px;
+}
+
+#stadium{
+  width: 500px;
+  padding: 30px;
+}
 
