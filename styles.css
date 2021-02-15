@@ -28,16 +28,20 @@ body {
     color: white;
   }
   .content{
-    padding-left:22px;
-    padding-top: 16px;
+    text-align: center;
+    width: 500px;
+    padding-left: 50px;
+  }
+  #logo-container{
+    padding-top: 10px;
+    display: flex;
   }
   #logo{
-      float: left;
-      width:50px;
-      padding-right: 10px;
+    width:50px;
   }
-  #name{
+  #logo-name{
       color: rgb(5, 5, 121);
+      padding-left: 10px;
   }
   .footer {
     position: fixed;
@@ -47,22 +51,54 @@ body {
     color: white;
     text-align: center;
     background-color: rgb(8, 2, 47);
-    padding:10px 0 10px;
+    padding:5px 0 10px;
     font-size:10px;
     color:#737373
  }
- @keyframes example {
-  0%   {background-color: red;}
-  25%  {background-color: yellow;}
-  50%  {background-color: blue;}
-  100% {background-color: green;}
-}
-.welcome{
-  padding:10px 200px 10px;
-}
+
 
 #stadium{
   width: 500px;
-  padding: 30px;
+  border-radius: 30px;
+}
+
+/* Styling for button */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #626262;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  vertical-align:middle;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
